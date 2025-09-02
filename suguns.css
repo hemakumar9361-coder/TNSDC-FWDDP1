@@ -1,0 +1,143 @@
+.main {
+    border: 0px solid rgb(15, 15, 15);
+    height: auto;
+    width: 100%;
+}
+
+.headermain {
+    border: 0px solid black;
+    color: white;
+    height: 100px;
+    width: 100%;
+    background: -webkit-linear-gradient(red);
+    display: flex;
+    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navsec {
+    margin-top: 0;
+}
+
+.navsec ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navsec ul li {
+    display: inline;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.h1 {
+    margin-left: 100px;
+}
+.h2 {
+    margin-right: 50px;
+}
+
+.mainone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    /* important for responsiveness */
+}
+
+.btnone {
+    border: none;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(14, 197, 203);
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.imgjob{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.h3{
+    background-color: aqua;
+}
+body{
+    background-color: aquamarine;
+}
+.head{
+    margin-right: 1060px;
+}
+
+/* ------------------- Mobile Responsive ------------------- */
+@media (max-width: 768px) {
+    .headermain {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+        justify-content: end;
+    }
+
+    .navsec ul li {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .mainone {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .h1 {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .h2 {
+        margin-right: 0;
+    }
+
+    .h2 img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        /* limit on mobile */
+    }
+
+    .btnone {
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        margin-top: 15px;
+    }
+}
+
+/* Extra Small Devices (phones < 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .navsec ul li {
+        font-size: 16px;
+    }
+}

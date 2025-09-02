@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js.js">
+
+</head>
+<script>
+    function showalert(){
+    alert("hello,this is your alert message");
+}
+</script>
+
+<body>
+   
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .form-container {
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #e8aeae;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 10px 20px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+    </style>
+    <a href="CONTACT"></a>
+
+    <div class="form-container">
+        <h2 style="text-align: center;">Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                        <input id="name" type="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age</label>
+                        <input id="age"  type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                        <select style="width: 100%;">
+                            <option value="">select</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label>
+                        <textarea>
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="document">Document</label>
+                        <input id="document" type="file" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" onclick="showalert()" for="submit" type="submit"
+                            style="border: none; background-color: rgb(123, 124, 126); border-radius: 5px; cursor: pointer; font-weight: bold; color: #f9f9f9;" />
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
